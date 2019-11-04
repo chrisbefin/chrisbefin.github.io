@@ -141,6 +141,9 @@ function reset_play(){
 	document.getElementById("C1").innerHTML = "C1";
 	document.getElementById("C2").innerHTML = "C2";
 	document.getElementById("C3").innerHTML = "C3";//reset board values
+	for (var i = 0; i < 9; i++) {
+		board_state[i] = -1;//reset board state to original
+	}
 }
 
 /*
