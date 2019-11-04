@@ -181,6 +181,7 @@ function play() {
 	setTimeout(function() {//delay to allow the game board to update for winning move
 		checkWin();
 	}, 200);
+	document.getElementById("move_text_id").value = "";//empty the move field once player has entered their move
 }
 
 function moveEnter(event) {
