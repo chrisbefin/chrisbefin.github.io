@@ -61,19 +61,18 @@ function checkWin () {
 			gameOver = true;
 		}
 	}
-	if (gameOver == true)
+	if (gameOver == true) {
 		reset_play();//reset the page when the game is over
 		return;
+	}
 	if (!board_state.includes(-1)) {
 		alert("Cat's game! Thanks for playing.");//checks for any remaining available moves
 		reset_play();
 	}
 }
 
-
 //IDs for all the table elements.
 var table_ids = ["A1", "A2", "A3", "B1", "B2", "B3", "C1", "C2", "C3"]
-
 /*
 This is to store the state to the tictactoe board.
 the move of player 1 = '1' and player 2 = '0'. -1 means the space is a free space
@@ -91,12 +90,10 @@ A variable to keep track of each players turn.
 */
 var turn = 1
 
-
  //The methods @Returns true if the _str is null or it has a length of 0, otherwise, the methods returns false
 function isEmpty(_str) {
 	return (!_str || 0 === _str.length)
 }
-
 /*
 begin_play function:
 1. checks for necessary conditions to begin play
@@ -145,7 +142,6 @@ function reset_play(){
 		board_state[i] = -1;//reset board state to original
 	}
 }
-
 /*
 play function:
 1. Handles turn to turn execution
@@ -173,7 +169,6 @@ function play() {
 			board_state[index] = 1;
 			document.getElementById(input).innerHTML = "<b>X</b>";//update the game board
 			document.getElementById("turn_info").innerHTML = "Turn for: <b>O</b>";
-
 			turn = 0;//switch turn to player 2
 		}
 		else {//player 2's turn
@@ -193,5 +188,4 @@ function moveEnter(event) {
 		event.preventDefault()
 		play()
 	}
-
 }
