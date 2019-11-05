@@ -1,1 +1,3 @@
-chrisbefin.github.io/views/index.html
+---
+permalink: /index.html
+---
