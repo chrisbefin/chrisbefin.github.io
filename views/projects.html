@@ -1,10 +1,14 @@
-<!DOCTYPE>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
   <title>Christian's Projects</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Custom styles for this template -->
+  <link href="../resources/css/scrolling-nav.css" rel="stylesheet">
 </head>
-<body>
+<body id="page-top">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="../index.html">Christian Fin</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,32 +28,99 @@
       </ul>
     </div>
   </nav>
-  <h3>My favorite projects</h3>
-  <table class="table">
-    <tr>
-      <th>Project Name</th>
-      <th>Technologies Used</th>
-    </tr>
-    <tr>
-      <td><a href="./project_pages/oregontrail.html">Oregon Trail Remake</a></td>
-      <td>C++</td>
-    </tr>
-    <tr>
-      <td><a href="./project_pages/scrabble.html">Scrabble Helper</a></td>
-      <td>C++, Git</td>
-    </tr>
-    <tr>
-      <td><a href="./project_pages/twitter_poet.html">twitter_poet</a></td>
-      <td>Python, Twitter search API via Twython</td>
-    </tr>
-  </table>
+
+
+<header class="bg-primary text-white">
+  <div class="container text-center">
+    <h1>Check out some of my favorite projects!</h1>
+  </div>
+</header>
+
+<section id="project-1">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2>Oregon Trail Remake</h2>
+        <p class="lead">This individual project was the final assignment
+        for CSCI1300- Intro to Computing, which I took my freshman year. It is meant
+        to be an adventure game along the lines of the classic 'Oregon Trail' videogame,
+        originally playable on the Apple II computer.
+        This was my first large,
+        open-ended project at CU and also one of my first forays in to object
+        oriented programming. It is written
+        in C++ and is played via the command line. </p>
+        <p class="lead">If you would like to view this project's source code
+        or download it and play it for yourself you can do so <a href="#">here</a>.</p>
+      </div>
+      <div class="col">
+        <img src="https://api.time.com/wp-content/uploads/2015/01/oregon_trail.jpg?quality=85&w=1012&h=569&crop=1" alt="You died of dysentery" height="200" width="200">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="project-2" class="bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTS231XdtHwTjE_gOOU12Bk2s4uWlC27sDwbLmPcmeQsuxE9hlC1F6RwZP2UaSpNQMVQKfvZjvW&usqp=CAc" alt="scrabble tiles">
+      </div>
+      <div class="col-lg-8 mx-auto">
+        <h2>Scrabble Helper</h2>
+        <p class="lead">This was a group project created as the final
+        assignment of CS2270- Data Structures. It is a program designed to help you beat your friends
+        at Scrabble by finding the best possible word to play.
+        This was the first project where I collaborated with others to
+        develop the final product. The large scale of the project along
+        with the fact that there were multiple contributors meant that this
+        was my first time using git for version control throughout the project.
+        The program is written in C++ and is used via the command line.</p>
+        <p class="lead">If you would like to view this project's source code
+        or download it and use it yourself you can do so <a href="https://github.com/chrisbefin/Scrabble-Helper">here</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="project-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2>@twitter_poet</h2>
+        <p class="lead">This individual project was created for T9Hacks 2020.
+        It uses the Twython Twitter Search API wrapper package to grab tweets using a keyword from the user
+        and then pull out snippets that make Haiku poems.</p>
+        <p class="lead">If you would like to view this project's source code
+        or download it and use it yourself you can do so <a href="https://github.com/chrisbefin/twitter_poet">here</a>.</p>
+      </div>
+      <div class="col">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTQ0VdmQGnS8QwX1D41SyIitApKqscZNQmWoIoqDd5-HbgCfCFW&usqp=CAU" alt="twitter logo">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Bootstrap core JavaScript -->
+<!-- <script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+
+
   <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
     <div class="container text-center">
       <small>Copyright &copy; 2020 chrisbefin.github.io</small>
     </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="../resources/js/scrolling-nav.js"></script>
 </body>
 </html>
