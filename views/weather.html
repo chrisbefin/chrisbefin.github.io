@@ -116,7 +116,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 	<script>
 		$(document).ready(function() {
-			var url ='https://api.darksky.net/forecast/7cf78a66d77ca9e840ebb49ccd79461e/37.8267,-122.4233'; //Place your DarkSky API Call Here
+			var url ='https://api.darksky.net/forecast/7cf78a66d77ca9e840ebb49ccd79461e/40.0150,105.2705'; //Place your DarkSky API Call Here
 			$.ajax({url:url, dataType:"jsonp"}).then(function(data) {
         console.log(data);//Review all of the data returned
 		    console.log("Current Temp: " + data.currently.apparentTemperature);//View Today's Temp
